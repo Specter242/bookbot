@@ -4,6 +4,16 @@ def main():
 
         file_contents = f.read()
 
-        print(file_contents)
+        #print(file_contents)
+
+    def count(file_contents):
+
+        words = file_contents.split()  
+
+        a = len(words)  
+
+        print(a)
+        #return a
+    
 
 main()
