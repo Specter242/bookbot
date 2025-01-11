@@ -37,10 +37,13 @@ def main():
     def sort(letters):
         
         sorted_letters = {}
-        sorted_letters = {key: letters[key] for key in sorted(letters)}
-        print(sorted_letters)
 
-    def report(count_words, count_characters):
+        sorted_letters = {key: letters[key] for key in sorted(letters)}
+        
+        return sorted_letters
+        #print(sorted_letters)
+
+    def report(count_words, sorted_letters):
 
         print("--- Begin report of books/frankenstein.txt ---")
 
@@ -48,12 +51,22 @@ def main():
 
         print()
 
+        for letter in sorted_letters:
+
+            if letter.isalpha():
+
+                print(f"The {letter} character was found {sorted_letters[letter]} times")
+
 
 
     #count_words(file_contents)
+    
+    counted_words = count_words(file_contents)
 
     letters = count_characters(file_contents)
 
-    sort(letters)
+    sorted_letters = sort(letters)
+
+    report(counted_words, sorted_letters)
 
 main()
