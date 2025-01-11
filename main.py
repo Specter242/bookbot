@@ -31,7 +31,8 @@ def main():
 
                 letters[letter] = 1
 
-        print(letters)
+        #print(letters)
+        return letters
 
     def sort(letters):
 
@@ -48,10 +49,10 @@ def main():
 
 
 
-
-
     #count_words(file_contents)
 
-    #count_characters(file_contents)
+    count_characters(file_contents)
+
+    sort(letters)
 
 main()
