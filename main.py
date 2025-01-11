@@ -33,9 +33,25 @@ def main():
 
         print(letters)
 
-    
+    def sort(letters):
+
+        sorted_letters = {key: letters[key] for key in sorted(letters)}
+        print(sorted_letters)
+
+    def report(count_words, count_characters):
+
+        print("--- Begin report of books/frankenstein.txt ---")
+
+        print(f"{count_words} words found in the document")
+
+        print()
+
+
+
+
+
     #count_words(file_contents)
 
-    count_characters(file_contents)
+    #count_characters(file_contents)
 
 main()
