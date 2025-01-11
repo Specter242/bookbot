@@ -35,7 +35,8 @@ def main():
         return letters
 
     def sort(letters):
-
+        
+        sorted_letters = {}
         sorted_letters = {key: letters[key] for key in sorted(letters)}
         print(sorted_letters)
 
@@ -51,7 +52,7 @@ def main():
 
     #count_words(file_contents)
 
-    count_characters(file_contents)
+    letters = count_characters(file_contents)
 
     sort(letters)
 
