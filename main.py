@@ -12,8 +12,8 @@ def main():
 
         a = len(words)  
 
-        print(a)
-        #return a
+        #print(a)
+        return a
 
     def count_characters(file_contents):
 
@@ -57,7 +57,9 @@ def main():
 
                 print(f"The {letter} character was found {sorted_letters[letter]} times")
 
+        print("--- End report ---")
 
+        
 
     #count_words(file_contents)
     
